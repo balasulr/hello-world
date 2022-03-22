@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* Don't make font size smaller than 16 */
+            font-size: 20px;
+        }
+        table {width: 100%}
+        table, th, td {border: 1px solid blue; border-collapse: collapse;}
+        th,td {padding: 5px 10px;}
+        th {font-style: italic; font-size: 0.8em;}
+        /* Makes the font-size 50% bigger */
+        #name {color:red; font-size: 1.5em;}
+        /* For classes, use a dot */
+        .bold { font-weight: bold;}
+        .green { color:green;}
+    </style>
+</head>
+<body>
+    <!-- This is a comment in HTML with a shortcut of ctrl & /-->
+    <h1>My first web page</h1>
+    <!-- The span tag has a id of name so that can change the style of the text in the span tag -->
+    <h3>By <span id = "name">Lakshmi Balasubramaniam </span> - Future Bootcamp Grad</h3>
+    <span>My favorite tech in the Bootcamp: </span>
+    <!-- ul stands for unordered list -->
+    <ul style="margin-top:0;">
+        <li>Java</li>
+        <li>C#</li>
+        <li>Git</li>
+    </ul>
+    <!-- Table has thead, tbody and tfoot -->
+    <table>
+        <thead>
+            <tr>
+                <!-- th is the column headings and tr is for row -->
+                <th>Id</th>
+                <th>Username</th>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Reviewer</th>
+                <th>Admin</th>
+            </tr>
+        </thead>
+        <!-- In tbody, put in data for each row in the table. td is the table data -->
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>sa</td>
+                <td>System</td>
+                <td>Admin</td>
+                <td class="bold green">Yes</td>
+                <td class="bold green">Yes</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>rv</td>
+                <td>System</td>
+                <td>Reviewer</td>
+                <td class="bold">Yes</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>us</td>
+                <td>System</td>
+                <td>This is a normal user of the system</td>
+                <td>No</td>
+                <td>No</td>
+            </tr>
+        </tbody>
+    </table>
+    <span>A code snippet:</span>
+    <pre>
+        foreach(var x of collection) {
+            sum += x.value;
+        }
+    </pre>
+</body>
+</html>
